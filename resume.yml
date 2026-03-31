@@ -9,12 +9,10 @@ content:
     email: tomvanveen@mail.com
     url: https://www.linkedin.com/in/tom-van-veen-8436a3304
     summary: |
-      Experienced Front-End Engineer with a focus on enterprise software development,
-      automated testing, and continuous integration. Committed to clean, efficient
-      solutions and minimising code overhead. Values collaboration and pair programming,
-      thriving in team environments that foster innovation and deliver high-quality results.
-      Outside of work, explores various programming languages and builds project websites,
-      reflecting a dedication to continuous learning and personal growth.
+      Front-End Engineer with 20+ years of experience, specialising in enterprise
+      software, automated testing, and CI/CD. Progressed from developer to Lead at
+      Visma, driving Vue 3 migration, TDD adoption, and cloud modernisation. Committed
+      to clean, efficient solutions and collaborative engineering culture.
   location:
     city: Amsterdam
     country: Netherlands
@@ -25,23 +23,17 @@ content:
       endDate:
       position: Lead Front-End Engineer
       summary: |
-        - Started as a Front-End Developer and progressively advanced to Lead over 9 years.
-        - Built a new Vue.js application shell for a legacy app, enabling modern feature development while phasing out unscalable architecture.
-        - Led a full migration from Vue 2 to Vue 3, including a complete transition from Options API to Composition API.
-        - Drove cloud migration and led a comprehensive overhaul of the application UI.
-        - Migrated testing stack from Jest/Cypress to Vitest/Playwright, achieving 100% TDD coverage.
-        - Optimised CI/CD pipelines from GitLab to GitHub, reducing lead time for UX features to 20% of the original timeframe.
+        - Progressed from Front-End Developer to Lead over 9 years.
+        - Led Vue 2 to Vue 3 migration including full Options API to Composition API transition.
+        - Migrated testing stack to Vitest/Playwright, achieving 100% TDD coverage.
+        - Optimised CI/CD pipelines from GitLab to GitHub, reducing lead time to 20% of original.
         - Improved filter response times from 500ms to instantaneous.
-        - Currently driving migration to Nuxt UI and Tailwind for consistency and performance.
-        - Mentored junior developers; owned key architecture decisions including TDD adoption, Vuex to Pinia, and Jest to Vitest migrations.
+        - Mentored junior developers; owned architecture decisions including Vuex to Pinia migration.
       keywords:
         - Vue 3
-        - Nuxt
         - TypeScript
         - Vitest
         - Playwright
-        - Pinia
-        - TDD
         - CI/CD
 
     - name: ProActive Analysis Module
@@ -54,9 +46,7 @@ content:
         - Used chart libraries spanning 20+ years of evolution including ECharts, Highcharts, Chart.js, and Plotly.js.
       keywords:
         - ECharts
-        - Highcharts
         - Chart.js
-        - Plotly.js
         - Data Visualisation
 
     - name: Freelance
@@ -68,7 +58,6 @@ content:
         - Specialised in crisis consulting and on-demand feature additions for existing PHP applications.
       keywords:
         - WordPress
-        - Joomla
         - PHP
         - JavaScript
 
@@ -94,9 +83,7 @@ content:
         - Created an OAuth proof of concept integrating Twitter and Gmail.
       keywords:
         - PHP
-        - Flash
         - OAuth
-        - Fullstack
 
     - name: New Media / Highranks SEO
       startDate: Jan 1, 2005
@@ -109,8 +96,6 @@ content:
       keywords:
         - SEO
         - PHP
-        - HTML
-        - CSS
 
     - name: Autosoft
       startDate: Jan 1, 2003
@@ -119,12 +104,10 @@ content:
       summary: |
         - Delivered bug fixes and feature additions to the Autocommerce package.
       keywords:
-        - Bug Fixing
         - PHP
 
   projects:
     - name: Ongehoord
-      url:
       description: Volunteer web development for a non-profit organisation.
       startDate: Jan 2020
       endDate:
@@ -163,6 +146,7 @@ content:
         - CSS
         - Vite
 
+
     - name: Testing & CI/CD
       level: Expert
       keywords:
@@ -171,13 +155,15 @@ content:
         - TDD
         - GitHub Actions
 
-    - name: Tools & Ecosystem
+    - name: Tools & Languages
       level: Advanced
       keywords:
         - Node.js
         - Git
         - Pinia
         - Tailwind
+        - Python
+        - Bash
 
   languages:
     - language: Dutch
@@ -215,4 +201,4 @@ layouts:
       showPageNumbers: true
     template: moderncv-banking
     typography:
-      fontSize: 11pt
+      fontSize: 10pt
