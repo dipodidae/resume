@@ -22,7 +22,7 @@ dist/                       # Generated output (gitignored); created by `make bu
   resume.html
   resume.md
   resume.tex
-.github/workflows/resume.yml  # CI: builds on push to main via yamlresume/action@v1
+.github/workflows/resume.yml  # CI: builds on push to main via yamlresume/action@v0.2.1
 ```
 
 ---
@@ -168,7 +168,7 @@ templates and layout options.
 ## CI / GitHub Actions
 
 The workflow at `.github/workflows/resume.yml` runs on every push to `main`
-and on manual dispatch. It uses the official `yamlresume/action@v1` action,
+and on manual dispatch. It uses the official `yamlresume/action@v0.2.1` action,
 which bundles its own LaTeX environment — no local LaTeX installation is
 needed in CI. Build artifacts (PDF, HTML, MD) are uploaded with a 7-day
 retention window and are **not committed to the repository**.
