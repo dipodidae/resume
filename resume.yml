@@ -1,0 +1,218 @@
+# yaml-language-server: $schema=https://yamlresume.dev/schema.json
+
+---
+content:
+  basics:
+    name: Tom van Veen
+    headline: Front-End Engineer
+    phone: "+31 0653597750"
+    email: tomvanveen@mail.com
+    url: https://4eva.me
+    summary: |
+      Experienced Front-End Engineer with a focus on enterprise software development,
+      automated testing, and continuous integration. Committed to clean, efficient
+      solutions and minimising code overhead. Values collaboration and pair programming,
+      thriving in team environments that foster innovation and deliver high-quality results.
+      Outside of work, explores various programming languages and builds project websites,
+      reflecting a dedication to continuous learning and personal growth.
+  location:
+    city: Amsterdam
+    country: Netherlands
+
+  work:
+    - name: Visma | ProActive
+      startDate: Sep 1, 2015
+      endDate:
+      position: Lead Front-End Engineer
+      summary: |
+        - Started as a Front-End Developer and progressively advanced to Lead over 9 years.
+        - Built a new Vue.js application shell for a legacy app, enabling modern feature development while phasing out unscalable architecture.
+        - Led a full migration from Vue 2 to Vue 3, including a complete transition from Options API to Composition API.
+        - Drove cloud migration and led a comprehensive overhaul of the application UI.
+        - Migrated testing stack from Jest/Cypress to Vitest/Playwright, achieving 100% TDD coverage.
+        - Optimised CI/CD pipelines from GitLab to GitHub, reducing lead time for UX features to 20% of the original timeframe.
+        - Improved filter response times from 500ms to instantaneous.
+        - Currently driving migration to Nuxt UI and Tailwind for consistency and performance.
+        - Mentored junior developers; owned key architecture decisions including TDD adoption, Vuex to Pinia, and Jest to Vitest migrations.
+      keywords:
+        - Vue 3
+        - Nuxt
+        - TypeScript
+        - Vitest
+        - Playwright
+        - Pinia
+        - TDD
+        - CI/CD
+
+    - name: ProActive Analysis Module
+      startDate: Sep 1, 2015
+      endDate:
+      position: Frontend Developer, Data Visualisation
+      summary: |
+        - Built a comprehensive data visualisation platform handling datasets from small to enterprise scale.
+        - Implemented 10 analysis types including ABC Analysis, Kraljic Matrix, Creditor Overview, Top 25 Spend, and more.
+        - Used chart libraries spanning 20+ years of evolution including ECharts, Highcharts, Chart.js, and Plotly.js.
+      keywords:
+        - ECharts
+        - Highcharts
+        - Chart.js
+        - Plotly.js
+        - Data Visualisation
+
+    - name: Freelance
+      startDate: Jan 1, 2007
+      endDate: Jan 1, 2015
+      position: Web Developer
+      summary: |
+        - Delivered diverse web projects using WordPress, Joomla and custom HTML/CSS/JavaScript solutions.
+        - Specialised in crisis consulting and on-demand feature additions for existing PHP applications.
+      keywords:
+        - WordPress
+        - Joomla
+        - PHP
+        - JavaScript
+
+    - name: 7scenes
+      startDate: Jan 1, 2011
+      endDate: Jan 1, 2013
+      position: Developer
+      summary: |
+        - Ported the mobile application to a web platform using jQuery.
+        - Designed and developed multiple project websites using custom WordPress themes.
+      keywords:
+        - jQuery
+        - WordPress
+
+    - name: Pixel Industries
+      startDate: Jan 1, 2007
+      endDate: Jan 1, 2009
+      position: Fullstack Developer
+      summary: |
+        - Fullstack development while studying, delivering client projects across the stack.
+        - Built the Museum Mesdag digital magazine backend.
+        - Developed a Face the Logo interactive Flash application.
+        - Created an OAuth proof of concept integrating Twitter and Gmail.
+      keywords:
+        - PHP
+        - Flash
+        - OAuth
+        - Fullstack
+
+    - name: New Media / Highranks SEO
+      startDate: Jan 1, 2005
+      endDate: Jan 1, 2007
+      position: Web Developer
+      summary: |
+        - Built numerous client websites.
+        - Developed search engine scanning tools.
+        - Built an intranet application for internal customer management.
+      keywords:
+        - SEO
+        - PHP
+        - HTML
+        - CSS
+
+    - name: Autosoft
+      startDate: Jan 1, 2003
+      endDate: Jan 1, 2005
+      position: Junior Developer
+      summary: |
+        - Delivered bug fixes and feature additions to the Autocommerce package.
+      keywords:
+        - Bug Fixing
+        - PHP
+
+  projects:
+    - name: Ongehoord
+      url:
+      description: Volunteer web development for a non-profit organisation.
+      startDate: Jan 2020
+      endDate:
+      summary: |
+        - Built web applications across a Nuxt 2 to Nuxt 4 progression over 6 years.
+        - Developed a full-fledged quiz system with Tres.js/Three.js 3D animation.
+        - Implemented SSR with optimised data flow and security practices.
+      keywords:
+        - Nuxt
+        - Three.js
+        - SSR
+        - Volunteer
+
+  education:
+    - institution: Hogeschool van Amsterdam
+      area: Digitale Media en Creatieve Industrie
+      degree: Bachelor
+      startDate: Feb 1, 2007
+      endDate: Jan 1, 2013
+
+    - institution: ROC van Twente
+      area: Media en Vormgeving
+      degree: Diploma
+      startDate: Feb 1, 2001
+      endDate: Feb 1, 2005
+
+  skills:
+    - name: Frontend
+      level: Expert
+      keywords:
+        - Vue 3
+        - Nuxt 4
+        - TypeScript
+        - JavaScript
+        - HTML
+        - CSS
+        - Vite
+
+    - name: Testing & CI/CD
+      level: Expert
+      keywords:
+        - Vitest
+        - Playwright
+        - TDD
+        - GitHub Actions
+
+    - name: Tools & Ecosystem
+      level: Advanced
+      keywords:
+        - Node.js
+        - Git
+        - Pinia
+        - Tailwind
+
+  languages:
+    - language: Dutch
+      fluency: Native or Bilingual Proficiency
+    - language: English
+      fluency: Full Professional Proficiency
+    - language: German
+      fluency: Minimum Professional Proficiency
+
+  interests:
+    - name: Music
+      keywords:
+        - Live music
+    - name: Technology
+      keywords:
+        - Retro technology
+        - Development
+
+locale:
+  language: en
+
+layouts:
+  - engine: html
+    template: calm
+    typography:
+      fontSize: 16px
+  - engine: markdown
+  - engine: latex
+    page:
+      margins:
+        top: 2.5cm
+        left: 1.5cm
+        right: 1.5cm
+        bottom: 2.5cm
+      showPageNumbers: true
+    template: moderncv-banking
+    typography:
+      fontSize: 11pt

@@ -1,0 +1,13 @@
+dist/
+node_modules/
+
+# Resume outputs
+resume.pdf
+resume.tex
+resume.html
+resume.md
+
+# LaTeX intermediates
+*.aux
+*.log
+*.out

@@ -1,0 +1,19 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tom van Veen — Resume as Code",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "make build",
+    "dev": "make dev",
+    "validate": "make validate",
+    "clean": "make clean",
+    "doctor": "make doctor"
+  },
+  "devDependencies": {
+    "yamlresume": "^0.12.2"
+  }
+}

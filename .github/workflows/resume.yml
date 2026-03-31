@@ -1,0 +1,29 @@
+name: Build Resume
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build resume
+        uses: yamlresume/action@v1
+        with:
+          resumes: resume.yml
+          verbose: true
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume
+          path: |
+            resume.pdf
+            resume.html
+            resume.md
+          retention-days: 7
