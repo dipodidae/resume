@@ -5,6 +5,11 @@ on:
     branches: [main]
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -27,3 +32,24 @@ jobs:
             resume.html
             resume.md
           retention-days: 7
+
+      - name: Prepare Pages
+        run: |
+          mkdir -p _site
+          cp resume.html _site/index.html
+          cp resume.pdf _site/resume.pdf
+          cp resume.md _site/resume.md
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
