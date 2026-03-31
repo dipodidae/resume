@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build resume
-        uses: yamlresume/action@v1
+        uses: yamlresume/action@v0.2.1
         with:
           resumes: resume.yml
           verbose: true
